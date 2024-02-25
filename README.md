@@ -1,1 +1,1 @@
-# qr-entry-control
+# qr-entry-control-web

@@ -2,13 +2,42 @@
 <html>
  
 <head>
-  <title>Read CSV file from URL in HTML using JavaScript - Clue Mediator</title>
+  <style>
+    table {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    table td, table th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    table tr:nth-child(even){background-color: #f2f2f2;}
+    table tr:hover {background-color: #ddd;}
+    
+    table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #ff7b00;
+      color: white;
+    }
+    </style>
+  <title>CSV Data - Clue Mediator</title>
 </head>
  
 <body>
-  <h1>CSV Data - Clue Mediator</h1>
+  <h1>La Chismosa - QR Entry Control</h1>
+  <div>
+  <h2><span id="id-datetime"></span></h2>
   <table id="csv-data"></table>
-  <script src="js/script-t11.js"></script>
+  </div>
+  <div>
+  <h2><span id="id-datetime2"></span></h2>
+  <table id="csv-data2"></table>
+  </div>
+  <script src="js/script-i2.js"></script>
 </body>
  
 </html>

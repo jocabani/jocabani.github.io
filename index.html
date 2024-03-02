@@ -1,43 +1,84 @@
 <!DOCTYPE html>
 <html>
- 
 <head>
-  <style>
-    table {
-      font-family: Arial, Helvetica, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-    }
-    
-    table td, table th {
-      border: 1px solid #ddd;
-      padding: 8px;
-    }
-    table tr:nth-child(even){background-color: #f2f2f2;}
-    table tr:hover {background-color: #ddd;}
-    
-    table th {
-      padding-top: 12px;
-      padding-bottom: 12px;
-      text-align: left;
-      background-color: #ff7b00;
-      color: white;
-    }
+    <style>
+        body, h1, h2, h3, h4, h5, h6  {
+          /* font-family: "Trebuchet MS", Tahoma, sans-serif; */
+          font-family: Cambria, Georgia, serif;
+        }
+        h1 {
+          font-size: 1.3em;
+          color: #333;
+        }
+        h2 {
+          font-size: 1.1em;
+          color: #555;
+        }
+        h3 {
+          font-size: 0.9em;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          color: #555;
+        }
+        table {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        table td, table th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        table tr:nth-child(even){background-color: #f2f2f2;}
+        table tr:hover {background-color: #ddd;}
+        
+        table th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #ff7b00;
+          color: white;
+        }
+        .datetime {
+          color: #000;
+        }
+        .count {
+          font-size: 1.2em;
+          color: #000;
+        }
+        .img-fluid {
+        margin: 0% 0% 0% auto;
+        }
+        
+        .banner-title {
+            margin: 0% auto 0% 0%;
+        }
     </style>
-  <title>La Chismosa - QR Entry Control</title>
+    <title>La Chismosa - QR Reportes</title>
 </head>
- 
 <body>
-  <h1>La Chismosa - QR Entry Control</h1>
-  <div>
-  <h2><span id="id-datetime"></span></h2>
-  <table id="csv-data"></table>
+  <div style="text-align: center;">
+    <img src="img/la-chismosa-logo-circular.png" width="100px" class="img-fluid" />
+    <div class="banner-title">
+    <h1 style="text-align: center;">La Chismosa :: QR Reportes</h1>
+    </div>
   </div>
-  <div>
-  <h2><span id="id-datetime2"></span></h2>
-  <table id="csv-data2"></table>
-  </div>
-  <script src="js/script-i2.js"></script>
+    
+    <h2>Hoy: <span id="id-today-datetime" class="datetime"></span>&nbsp;</h2>
+    <h3>&raquo;&nbsp;CANTIDAD TOTAL:&nbsp;<span id="id-today-count" class="count"></span></h3>
+    <div style="width:auto; height:180px; overflow:auto;">
+      <table id="id-today-table" class="output"></table>
+    </div>
+    <h2>Semana: <span id="id-week-datetime" class="datetime"></span>&nbsp;</h2>
+    <h3>&raquo;&nbsp;CANTIDAD TOTAL:&nbsp;<span id="id-week-count" class="count"></span></h3>
+    <div style="width:auto; height:180px; overflow:auto;">
+      <table id="id-week-table" class="output"></table>
+    </div>
+    <h2>Mes: <span id="id-month-datetime" class="datetime"></span>&nbsp;</h2>
+    <h3>&raquo;&nbsp;CANTIDAD TOTAL:&nbsp;<span id="id-month-count" class="count"></span></h3>
+    <div style="width:auto; height:180px; overflow:auto;">
+      <table id="id-month-table" class="output"></table>
+    </div>
+    <script src="js/script-i1.js"></script>
 </body>
- 
 </html>

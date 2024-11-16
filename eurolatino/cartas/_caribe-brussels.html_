@@ -6,15 +6,12 @@
         <meta http-equiv="Expires" content="0" />
         <title>Caribe Brussels :: Carta</title>
 	</head>
-	<body id="body_image" style="background-color: #000;">
-	    <div>
-            <img id="carta_actual" src="" style="width: auto;" />
-        </div>
-
+	<body id="body_image" style="background-size: auto 100%; background-repeat: no-repeat; background-position-x: center; background-color: #000;">
+	&nbsp;
     <script>
         const random_number = Math.floor(Math.random() * Math.pow(10,16));;
-        let carta_actual = document.getElementById("carta_actual");
-        carta_actual.src = "img/CBC02.jpeg?"+random_number;
+        let body_image = document.getElementById("body_image");
+        body_image.style.backgroundImage = "url('img/CBC02.jpeg?"+random_number+"')";
     </script>
 	</body>
 </html>
